@@ -1,0 +1,28 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+   
+}
+.nav>h2{
+    margin-right: 30px;
+    margin-left: 30px;
+    font-weight: 110px;
+    cursor: pointer;
+    opacity: .7;
+    transition: transform 50ms fade ease-out;
+}
+
+.nav>h2:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.nav{
+    -ms-overflow-style: none;/* IE and Edge */
+    scrollbar-width:none; /*Firefox*/
+}
+/* chrome */
+.nav::-webkit-scrollbar{
+    display:none
+}
